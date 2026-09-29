@@ -12,3 +12,4 @@ mlruns/
 .env
 .DS_Store
 Thumbs.db
+mlflow.db
