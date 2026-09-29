@@ -182,4 +182,5 @@ def preprocess_data():
 # ==============================
 
 if __name__ == "__main__":
+    print("Preprocessing version: v2")
     preprocess_data()
