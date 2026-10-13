@@ -165,3 +165,10 @@ Model Saving
         ↓
 Streamlit Deployment
 
+## 9. MLOps Labs and Documentation
+
+This project also includes experiments covering MLOps pipeline automation, continuous integration, and failure recovery.
+
+* **Lab 7 – MLOps Pipeline:** Automated model training, evaluation, and pipeline execution. See [`docs/LAB7_PIPELINE.md`](docs/LAB7_PIPELINE.md).
+* **Lab 8 – Continuous Integration:** GitHub Actions workflow for automated validation. See [`docs/LAB8_CI_REPORT.md`](docs/LAB8_CI_REPORT.md).
+* **Lab 9 – Failure Handling and Recovery:** Tested recovery mechanisms for missing data, invalid datatypes, schema mismatches, preprocessing errors, and missing model artifacts. See [`docs/LAB9_FAILURE_RECOVERY.md`](docs/LAB9_FAILURE_RECOVERY.md).
