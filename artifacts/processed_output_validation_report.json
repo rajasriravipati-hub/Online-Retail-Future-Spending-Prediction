@@ -1,0 +1,18 @@
+{
+    "dataset": "data\\processed\\lab5_processed_online_retail.csv",
+    "rows": 4326,
+    "columns": [
+        "TotalSpent",
+        "NumberOfOrders",
+        "TotalQuantity",
+        "AverageOrderValue",
+        "UniqueProducts",
+        "AverageUnitPrice",
+        "FutureSpending"
+    ],
+    "missing_columns": [],
+    "missing_values": 0,
+    "duplicate_rows": 0,
+    "non_finite_values": 0,
+    "status": "success"
+}

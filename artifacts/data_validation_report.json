@@ -1,0 +1,8 @@
+{
+    "dataset": "data\\OnlineRetail.csv",
+    "rows": 541909,
+    "missing_columns": [],
+    "numeric_errors": [],
+    "invalid_dates": 0,
+    "status": "success"
+}

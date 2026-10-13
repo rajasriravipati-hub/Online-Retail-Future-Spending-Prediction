@@ -1,0 +1,16 @@
+{
+    "output_file": "data\\processed\\lab5_processed_online_retail.csv",
+    "rows_after_preprocessing": 4326,
+    "columns": [
+        "TotalSpent",
+        "NumberOfOrders",
+        "TotalQuantity",
+        "AverageOrderValue",
+        "UniqueProducts",
+        "AverageUnitPrice",
+        "FutureSpending"
+    ],
+    "missing_values": 0,
+    "duplicate_rows": 0,
+    "status": "success"
+}

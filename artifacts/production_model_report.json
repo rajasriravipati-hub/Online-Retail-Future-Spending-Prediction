@@ -1,0 +1,8 @@
+{
+    "model": "models\\ridge_model_lab7.pkl",
+    "scaler": "models\\scaler_lab7.pkl",
+    "quality_gate": "passed",
+    "lifecycle_status": "eligible_for_promotion",
+    "production_promotion_performed": false,
+    "timestamp_utc": "2026-10-13T04:00:05.999326+00:00"
+}

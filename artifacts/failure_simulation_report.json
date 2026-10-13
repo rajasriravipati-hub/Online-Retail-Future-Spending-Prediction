@@ -1,0 +1,35 @@
+{
+    "timestamp_utc": "2026-10-13T04:00:09.024629+00:00",
+    "source_file": "data\\processed\\lab5_processed_online_retail.csv",
+    "source_modified": false,
+    "scenarios": [
+        {
+            "scenario": "missing_required_column",
+            "expected_failure": true,
+            "detected": true,
+            "errors": [
+                "Missing required columns: FutureSpending"
+            ],
+            "status": "PASS"
+        },
+        {
+            "scenario": "missing_value",
+            "expected_failure": true,
+            "detected": true,
+            "errors": [
+                "Missing values detected"
+            ],
+            "status": "PASS"
+        },
+        {
+            "scenario": "negative_value",
+            "expected_failure": true,
+            "detected": true,
+            "errors": [
+                "Negative values detected in TotalSpent"
+            ],
+            "status": "PASS"
+        }
+    ],
+    "status": "passed"
+}

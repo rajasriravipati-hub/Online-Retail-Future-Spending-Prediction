@@ -1,0 +1,23 @@
+{
+    "experiment": "Online_Retail_Lab7_Pipeline",
+    "run_id": "dc64fe52121d45718520653b6b1e47b7",
+    "model": "models\\ridge_model_lab7.pkl",
+    "scaler": "models\\scaler_lab7.pkl",
+    "training_rows": 3460,
+    "testing_rows": 866,
+    "features": [
+        "TotalSpent",
+        "NumberOfOrders",
+        "TotalQuantity",
+        "AverageOrderValue",
+        "UniqueProducts",
+        "AverageUnitPrice"
+    ],
+    "target": "FutureSpending",
+    "metrics": {
+        "MAE": 0.2696591909569166,
+        "RMSE": 2.0389251982327576,
+        "R2": 0.9999960672766274
+    },
+    "status": "success"
+}

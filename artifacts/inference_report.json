@@ -1,0 +1,7 @@
+{
+    "input_rows": 4326,
+    "prediction_count": 4326,
+    "output_file": "outputs\\inference_predictions.csv",
+    "model_file": "models\\ridge_model_lab7.pkl",
+    "status": "success"
+}
