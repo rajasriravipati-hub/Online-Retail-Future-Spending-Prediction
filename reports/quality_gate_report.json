@@ -1,0 +1,18 @@
+{
+    "thresholds": {
+        "maximum_MAE": 1.0,
+        "maximum_RMSE": 5.0,
+        "minimum_R2": 0.9
+    },
+    "metrics": {
+        "MAE": 0.2696591909569166,
+        "RMSE": 2.0389251982327576,
+        "R2": 0.9999960672766274
+    },
+    "checks": {
+        "MAE": "PASS",
+        "RMSE": "PASS",
+        "R2": "PASS"
+    },
+    "status": "passed"
+}

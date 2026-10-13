@@ -1,0 +1,31 @@
+﻿name: Lab 8 - Online Retail CI
+
+on:
+  push:
+    branches: [main, lab8-ci]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Check Python syntax
+        run: python -m compileall -q src pipelines tests
+
+      - name: Validate Lab 7 reports
+        run: |
+          python -c "import json; from pathlib import Path; files=['artifacts/data_load_report.json','artifacts/data_validation_report.json','artifacts/preprocessing_summary_report.json','artifacts/processed_output_validation_report.json','artifacts/lab7_training_report.json','artifacts/production_model_report.json','artifacts/inference_report.json','artifacts/failure_simulation_report.json','reports/evaluation_report.json','reports/quality_gate_report.json']; missing=[f for f in files if not Path(f).is_file()]; print('Missing reports:', missing); [json.loads(Path(f).read_text(encoding='utf-8')) for f in files if Path(f).is_file()]; raise SystemExit(1 if missing else 0)"

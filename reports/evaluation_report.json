@@ -1,0 +1,10 @@
+{
+    "model": "models\\ridge_model_lab7.pkl",
+    "test_rows": 866,
+    "metrics": {
+        "MAE": 0.2696591909569166,
+        "RMSE": 2.0389251982327576,
+        "R2": 0.9999960672766274
+    },
+    "status": "success"
+}
