@@ -1,0 +1,48 @@
+{
+    "experiment": "Experiment 9: Pipeline Failure Handling and Recovery",
+    "dataset": "data\\processed\\lab5_processed_online_retail.csv",
+    "results": [
+        {
+            "scenario": "missing_data",
+            "status": "RECOVERED",
+            "root_cause": "Required numeric value was missing.",
+            "recovery": "Detected and removed the affected row."
+        },
+        {
+            "scenario": "invalid_datatype",
+            "status": "RECOVERED",
+            "root_cause": "Feature values arrived as strings.",
+            "recovery": "Validated and converted numeric strings."
+        },
+        {
+            "scenario": "schema_mismatch",
+            "status": "RECOVERED",
+            "root_cause": "Missing required columns: ['TotalSpent']",
+            "recovery": "Rejected the invalid schema before training."
+        },
+        {
+            "scenario": "preprocessing_error",
+            "status": "RECOVERED",
+            "root_cause": "A non-numeric value interrupted conversion.",
+            "recovery": "Coerced invalid values to missing and removed affected rows."
+        },
+        {
+            "scenario": "missing_model_artifact",
+            "status": "RECOVERED",
+            "root_cause": "Expected model artifact was absent.",
+            "recovery": "retrained_model"
+        }
+    ],
+    "model_training": {
+        "model_path": "models\\lab9_recovery_model.pkl",
+        "backup_path": null,
+        "test_rows": 866,
+        "mae": 0.2696591909569166
+    },
+    "summary": {
+        "total_scenarios": 5,
+        "recovered_scenarios": 5,
+        "failed_scenarios": 0,
+        "all_scenarios_recovered": true
+    }
+}
