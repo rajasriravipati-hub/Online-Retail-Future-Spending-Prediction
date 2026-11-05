@@ -1,0 +1,85 @@
+{
+    "experiment": "Lab 13 - End-to-End MLOps Validation",
+    "timestamp": "2026-11-05T12:34:24.337605",
+    "total_checks": 15,
+    "passed": 15,
+    "failed": 0,
+    "overall_status": "PASSED",
+    "checks": [
+        {
+            "check": "File exists: api/main.py",
+            "status": "PASSED",
+            "details": ""
+        },
+        {
+            "check": "File exists: api/model_loader.py",
+            "status": "PASSED",
+            "details": ""
+        },
+        {
+            "check": "File exists: api/schemas.py",
+            "status": "PASSED",
+            "details": ""
+        },
+        {
+            "check": "File exists: Dockerfile",
+            "status": "PASSED",
+            "details": ""
+        },
+        {
+            "check": "File exists: k8s/deployment.yaml",
+            "status": "PASSED",
+            "details": ""
+        },
+        {
+            "check": "File exists: k8s/service.yaml",
+            "status": "PASSED",
+            "details": ""
+        },
+        {
+            "check": "File exists: models/lab9_recovery_model.pkl",
+            "status": "PASSED",
+            "details": ""
+        },
+        {
+            "check": "File exists: reports/lab12_monitoring_report.json",
+            "status": "PASSED",
+            "details": ""
+        },
+        {
+            "check": "Lab 12 report is valid JSON",
+            "status": "PASSED",
+            "details": ""
+        },
+        {
+            "check": "Lab 12 candidate model metrics available",
+            "status": "PASSED",
+            "details": ""
+        },
+        {
+            "check": "GET /",
+            "status": "PASSED",
+            "details": ""
+        },
+        {
+            "check": "GET /health",
+            "status": "PASSED",
+            "details": "{'status': 'healthy', 'model_loaded': True}"
+        },
+        {
+            "check": "GET /metadata",
+            "status": "PASSED",
+            "details": ""
+        },
+        {
+            "check": "POST /predict",
+            "status": "PASSED",
+            "details": "{'prediction': 99.7667858395692}"
+        },
+        {
+            "check": "POST /predict/batch",
+            "status": "PASSED",
+            "details": ""
+        }
+    ]
+}

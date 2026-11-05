@@ -1,0 +1,56 @@
+{
+    "experiment": "Lab 12 - Monitoring, Drift Detection and Retraining",
+    "dataset_rows": 4326,
+    "reference_rows": 3028,
+    "current_rows": 1298,
+    "feature_drift": {
+        "TotalSpent": {
+            "ks_statistic": 0.020851101074104456,
+            "p_value": 0.8145081216293889,
+            "drift_detected": false
+        },
+        "NumberOfOrders": {
+            "ks_statistic": 0.018347503424636646,
+            "p_value": 0.9125603188713399,
+            "drift_detected": false
+        },
+        "TotalQuantity": {
+            "ks_statistic": 0.027335011897177464,
+            "p_value": 0.4952566676551437,
+            "drift_detected": false
+        },
+        "AverageOrderValue": {
+            "ks_statistic": 0.020659769221218316,
+            "p_value": 0.8228280179656225,
+            "drift_detected": false
+        },
+        "UniqueProducts": {
+            "ks_statistic": 0.02601858768596335,
+            "p_value": 0.558947457719969,
+            "drift_detected": false
+        },
+        "AverageUnitPrice": {
+            "ks_statistic": 0.02429202125819019,
+            "p_value": 0.6454828131421341,
+            "drift_detected": false
+        }
+    },
+    "feature_drift_count": 0,
+    "deployed_model_metrics": {
+        "mae": 0.2696591909569166,
+        "rmse": 2.0389251982327576,
+        "r2": 0.9999960672766274
+    },
+    "candidate_model_metrics": {
+        "mae": 0.2696591909569166,
+        "rmse": 2.0389251982327576,
+        "r2": 0.9999960672766274
+    },
+    "prediction_drift": {
+        "deployed_mean_prediction": 219.57539364871707,
+        "candidate_mean_prediction": 219.57539364871707,
+        "absolute_mean_difference": 0.0
+    },
+    "candidate_model_path": "artifacts\\lab12_candidate_model.pkl",
+    "promotion_decision": "Candidate performs better or equal on MAE and is eligible for review"
+}
